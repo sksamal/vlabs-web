@@ -20,9 +20,18 @@
       message="Invalid login"; 
    }
     %>
+   <style type="text/css">
+<!--
+.style1 {font-size: x-large}
+-->
+   </style>
 <body bgcolor="white">
-<form method="POST" action='<%= response.encodeURL("vl_login.jsp") %>' >
-  <table border="0" cellspacing="5">
+<p class="style1">Welcome to Virtual Labs </p>
+<table width="901" height="244" border="0">
+  <tr>
+  <td width="383" align="left"></td>
+    <td width="502"><form method="POST" action='<%= response.encodeURL("vl_login.jsp") %>' >
+  <table border="0" cellspacing="5" bgcolor="#99FF66">
     <tr>
       <th align="right">Username:</th>
       <td align="left"><input type="text" name="username" value="<%= name %>"></td>
@@ -41,6 +50,9 @@
       <td align="left"></td>
     </tr>
   </table>
-</form>
+</form></td>
+  </tr>
+</table>
+
 </body>
 </html>
